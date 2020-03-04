@@ -42,7 +42,7 @@ object DataSetDataSourceApp {
 
     //一个文件目录
     val filePath = "file:///Users/liuzhiwei/data/flink/input"
-    env.readTextFile(filePath).print()
+    //env.readTextFile(filePath).print()
   }
 
   def csvFile(env: ExecutionEnvironment): Unit = {
@@ -55,7 +55,7 @@ object DataSetDataSourceApp {
     //    case class MyCaseClass(age: Int, job: String)
     //    env.readCsvFile[MyCaseClass](filePath, ignoreFirstLine = true, includedFields = Array(1, 2)).print()
 
-    env.readCsvFile[Person](filePath, ignoreFirstLine = true, pojoFields = Array("name", "age", "job")).print()
+    //env.readCsvFile[Person](filePath, ignoreFirstLine = true, pojoFields = Array("name", "age", "job")).print()
 
   }
 
