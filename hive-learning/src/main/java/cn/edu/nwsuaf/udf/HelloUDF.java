@@ -9,8 +9,9 @@ import org.apache.hadoop.io.Text;
  * 需求：输入xxx,输出Hello:xxx
  */
 
-@Description(name = "helloUDF",value = "_FUNC_",extended = "")
+@Description(name = "helloUDF", value = "_FUNC_", extended = "")
 public class HelloUDF extends UDF {
+
     public Text evaluate(Text input) {
         return new Text("Hello:" + input);
     }
