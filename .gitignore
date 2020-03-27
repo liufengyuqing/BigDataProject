@@ -1,6 +1,7 @@
 .idea/
 target/
 *.iml
+**/*.iml
 
 # test
 */test/*
@@ -26,3 +27,5 @@ target/
 # out
 **/out/
 **/target/
+
+/canal-learning/canal-learning.iml
