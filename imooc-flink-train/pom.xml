@@ -89,9 +89,9 @@
     </dependencies>
 
     <build>
-        <defaultGoal>install</defaultGoal>
-        <sourceDirectory>src/main/scala</sourceDirectory>
-        <testSourceDirectory>src/test/scala</testSourceDirectory>
+<!--        <defaultGoal>install</defaultGoal>-->
+<!--        <sourceDirectory>src/main/scala</sourceDirectory>-->
+<!--        <testSourceDirectory>src/test/scala</testSourceDirectory>-->
 
         <plugins>
 

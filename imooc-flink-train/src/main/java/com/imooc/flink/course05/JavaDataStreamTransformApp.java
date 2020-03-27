@@ -20,11 +20,11 @@ public class JavaDataStreamTransformApp {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
-        //filterFunction(env);
+        filterFunction(env);
 
         //unionFunction(env);
 
-        splitSelectFunction(env);
+        //splitSelectFunction(env);
 
         env.execute("JavaDataStreamTransformApp");
     }

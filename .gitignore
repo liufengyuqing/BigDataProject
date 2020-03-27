@@ -1,7 +1,6 @@
 .idea/
 target/
 *.iml
-**/*.iml
 
 # test
 */test/*
@@ -27,5 +26,7 @@ target/
 # out
 **/out/
 **/target/
-
 /canal-learning/canal-learning.iml
+Flink-Demo/src/main/resources/
+Flink-Demo/src/test/java/
+canal-learning/src/
