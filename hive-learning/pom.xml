@@ -19,12 +19,12 @@
         <hive.version>2.3.6</hive.version>
     </properties>
 
-    <repositories>
-        <repository>
-            <id>spring-libs</id>
-            <url>http://repo.spring.io/libs-milestone/</url>
-        </repository>
-    </repositories>
+    <!--    <repositories>
+            <repository>
+                <id>spring-libs</id>
+                <url>http://repo.spring.io/libs-milestone/</url>
+            </repository>
+        </repositories>-->
 
     <dependencies>
         <!-- 添加依赖组件，根据上方配置的版本参数和repository知识库下载依赖 -->
