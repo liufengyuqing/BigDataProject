@@ -5,14 +5,14 @@ package cn.edu.nwsuaf.udf;
  * https://blog.csdn.net/bitcarmanlee/article/details/51249260
  */
 
+import org.apache.hadoop.hive.ql.exec.UDF;
+
 import java.io.InputStreamReader;
 import java.text.NumberFormat;
 import java.util.HashMap;
 import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import org.apache.hadoop.hive.ql.exec.UDF;
 
 public class FestivalType extends UDF {
 
