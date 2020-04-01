@@ -12,7 +12,7 @@ public class SocketWordCount {
     public static void main(String[] args) throws Exception {
         //参数检查
         if (args.length != 2) {
-            System.err.println("USAGE:\nSocketTextStreamWordCount <hostname> <port>");
+            System.err.println("USAGE:\n SocketTextStreamWordCount <hostname> <port>");
             return;
         }
         String hostname = args[0];

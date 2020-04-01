@@ -25,14 +25,14 @@ public class WriteToMySQL {
             PreparedStatement ps = conn.prepareStatement(sql);
             while (true) {
                 Thread.sleep(3000);
-                //int id = new Random().nextInt(10);
+                //int id = new Random().nextInt(10); //建表时设置了id主键自增
                 int collector_id = new Random().nextInt(5);
                 int call_direction = new Random().nextInt(2) + 1;
                 String connected = connection[new Random().nextInt(connection.length)];
                 int RECORD_DURATION = new Random().nextInt(200);
                 long time_dialing = System.currentTimeMillis();
-                System.out.println("collector_id: " + collector_id + " call_direction: " +
-                        call_direction + " connected: " + connected + " RECORD_DURATION: " + RECORD_DURATION + " time_dialing: " + time_dialing);
+                System.out.println("collector_id: " + collector_id + " call_direction: " + call_direction
+                        + " connected: " + connected + " RECORD_DURATION: " + RECORD_DURATION + " time_dialing: " + time_dialing);
                 ps.setInt(1, collector_id);
                 ps.setInt(2, call_direction);
                 ps.setString(3, connected);
@@ -40,7 +40,6 @@ public class WriteToMySQL {
                 ps.setLong(5, time_dialing);
                 ps.execute();
             }
-
         } catch (Exception e) {
             e.printStackTrace();
         }

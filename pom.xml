@@ -19,6 +19,7 @@
         <module>hadoop-learning</module>
         <module>redis-learning</module>
         <module>scala-learning</module>
+        <module>mysql-learning</module>
     </modules>
 
     <name>BigDataProject</name>

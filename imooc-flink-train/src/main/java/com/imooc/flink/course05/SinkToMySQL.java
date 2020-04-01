@@ -40,6 +40,7 @@ public class SinkToMySQL extends RichSinkFunction<Student> {
         connection = getConnection();
         String sql = "insert into student(id,name,age) values(?,?,?)";
         pstmt = connection.prepareStatement(sql);
+
     }
 
     //每条记录执行一次
