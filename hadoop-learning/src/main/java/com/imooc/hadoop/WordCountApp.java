@@ -30,7 +30,7 @@ public class WordCountApp {
             String line = value.toString();
 
             //按照指定分隔符进行拆分
-            String[] words = line.split(" ");
+            String[] words = line.split(",");
 
             for (String word : words) {
                 //通过上下文把map的处理结果输出
@@ -86,9 +86,9 @@ public class WordCountApp {
         //设置作业处理的输出路径
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
-        System.exit(job.waitForCompletion(true) ? 0 : 1);
-
-
+        //提交job
+        boolean result = job.waitForCompletion(true);
+        System.exit(result ? 0 : 1);
     }
 
 }

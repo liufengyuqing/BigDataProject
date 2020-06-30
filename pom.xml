@@ -10,16 +10,10 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>kafka-learning</module>
-        <module>flume-learning</module>
-        <module>hive-learning</module>
         <module>canal-learning</module>
         <module>imooc-flink-train</module>
-        <module>Flink-Demo</module>
         <module>flink-learning</module>
         <module>hadoop-learning</module>
-        <module>redis-learning</module>
-        <module>scala-learning</module>
-        <module>mysql-learning</module>
     </modules>
 
     <name>BigDataProject</name>

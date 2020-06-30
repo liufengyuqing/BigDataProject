@@ -18,7 +18,6 @@ import com.alibaba.otter.canal.protocol.CanalEntry.RowData;
 
 public class SimpleCanalClientExample {
 
-
     public static void main(String args[]) {
         // 创建链接
         CanalConnector connector = CanalConnectors.newSingleConnector(new InetSocketAddress(AddressUtils.getHostIp(),

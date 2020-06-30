@@ -20,15 +20,19 @@ public class TestAPI {
         try {
             String filename = "test";
 
+            // 1 获取文件系统
             Configuration conf = new Configuration();
+            // 配置在集群上运行
             conf.set("fs.defaultFS", "hdfs://localhost:9000");
             conf.set("fs.hdfs.impl", "org.apache.hadoop.hdfs.DistributedFileSystem");
             FileSystem fs = FileSystem.get(conf);
+            // 2 判断目录
             if (fs.exists(new Path(filename))) {
                 System.out.println("文件存在");
             } else {
                 System.out.println("文件不存在");
             }
+            // 3 关闭资源
             fs.close();
         } catch (Exception e) {
             e.printStackTrace();

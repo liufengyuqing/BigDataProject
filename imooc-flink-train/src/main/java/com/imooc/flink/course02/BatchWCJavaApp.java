@@ -31,6 +31,7 @@ public class BatchWCJavaApp {
         text.flatMap(new FlatMapFunction<String, Tuple2<String, Integer>>() {
             @Override
             public void flatMap(String value, Collector<Tuple2<String, Integer>> collector) throws Exception {
+                //文本分割
                 String[] tokens = value.toLowerCase().split("\t");
                 for (String token : tokens) {
                     if (token.length() > 0) {
@@ -38,7 +39,10 @@ public class BatchWCJavaApp {
                     }
                 }
             }
-        }).groupBy(0).sum(1).print();
+        })
+                .groupBy(0)
+                .sum(1)
+                .print();
 
 
     }
